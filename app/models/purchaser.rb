@@ -1,3 +1,3 @@
-class Purchasers < ActiveRecord::Base
+class Purchaser < ActiveRecord::Base
   attr_accessible :name
 end

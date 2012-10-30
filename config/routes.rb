@@ -1,9 +1,9 @@
 DataEngineering::Application.routes.draw do
+
   devise_for :users
 
-  get "importer/new"
-
-  get "importer/create"
+  resources :transactions
+  resources :file_imports
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

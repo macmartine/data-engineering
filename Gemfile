@@ -7,7 +7,14 @@ gem 'rails', '3.2.8'
 
 gem 'sqlite3'
 gem 'devise'
-gem "twitter-bootstrap-rails"
+gem 'twitter-bootstrap-rails'
+gem 'haml'
+
+group :test, :development do
+	gem 'factory_girl_rails'
+  gem 'rspec-rails', '~> 2.0'
+  gem 'capybara'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.

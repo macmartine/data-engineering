@@ -1,3 +1,3 @@
-class Transactions < ActiveRecord::Base
+class Transaction < ActiveRecord::Base
   # attr_accessible :title, :body
 end

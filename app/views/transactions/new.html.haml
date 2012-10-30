@@ -1,0 +1,9 @@
+Form
+
+%p
+	Choose a file to import transactions. Supported file types: .tab
+
+=form_for @file_import, :multipart => true do |f|
+	=f.file_field :file
+	=link_to 'Import transactions', transactions_path, :class => "btn btn-primary"
+	=link_to 'Cancel', transactions_path, :class => "btn btn-danger"
