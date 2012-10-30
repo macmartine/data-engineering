@@ -10,10 +10,13 @@ gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'haml'
 
-group :test, :development do
+group :test do
 	gem 'factory_girl_rails'
   gem 'rspec-rails', '~> 2.0'
   gem 'capybara'
+  gem 'guard-spork'
+  gem 'guard-rspec'
+  gem 'rb-fsevent', '~> 0.9.1'
 end
 
 # Gems used only for assets and not required

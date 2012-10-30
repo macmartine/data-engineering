@@ -25,5 +25,4 @@ describe "layouts/application.html.haml" do
 		end
 
   end
-
 end
