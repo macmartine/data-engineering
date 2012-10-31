@@ -14,9 +14,9 @@
 
 
 body {
-	padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 input[type="file"] {
-	line-height: 8px !important;
+  line-height: 8px !important;
 }

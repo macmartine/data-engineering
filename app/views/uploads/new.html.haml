@@ -1,14 +1,14 @@
 .page-header
-	%h1
-		Import line items
+  %h1
+    Import line items
 
 =form_for @upload, :multipart => true do |f|
-	-@upload.errors.full_messages.each do |msg|
-		.alert.alert-error
-			=msg
+  -@upload.errors.full_messages.each do |msg|
+    .alert.alert-error
+      =msg
 
-	=f.hidden_field :dummy, :value => "0"
-	=f.file_field :upload_file
-	.form-actions
-		=f.submit 'Import', :class => "btn btn-primary"
-		=link_to 'Cancel', line_items_path, :class => "btn btn-danger"
+  =f.hidden_field :dummy, :value => "0"
+  =f.file_field :upload_file
+  .form-actions
+    =f.submit 'Import', :class => "btn btn-primary"
+    =link_to 'Cancel', line_items_path, :class => "btn btn-danger"

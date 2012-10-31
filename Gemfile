@@ -12,7 +12,7 @@ gem 'haml'
 gem 'fastercsv'
 
 group :test do
-	gem 'factory_girl_rails'
+  gem 'factory_girl_rails'
   gem 'rspec-rails', '~> 2.0'
   gem 'capybara'
   gem 'guard-spork'

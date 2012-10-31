@@ -1,11 +1,11 @@
 require 'csv'
 class UploadsController < ApplicationController
 
-	def new
-		@upload = Upload.new
-	end
+  def new
+    @upload = Upload.new
+  end
 
-	def create
+  def create
     @upload = Upload.new(params[:upload])
     if @upload.valid?
       CSV.parse(params[:upload][:upload_file].read.to_s, {:headers => true, :col_sep => "\t"}).each do |row|
@@ -24,6 +24,6 @@ class UploadsController < ApplicationController
       flash[:error] = @upload.errors.messages.first
       render :action => "new"
     end
-	end
+  end
 
 end

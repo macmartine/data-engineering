@@ -3,7 +3,7 @@ class Upload
   include ActiveModel::Conversion
   extend ActiveModel::Naming
 
-	attr_accessor :upload_file, :dummy
+  attr_accessor :upload_file, :dummy
 
   validates_presence_of :upload_file
 

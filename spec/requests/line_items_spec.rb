@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'line_items', :type => :request do
 
-	before (:each) do
+  before (:each) do
     user = User.create(:email    => "email@example.com",
                        :password => "my_secure_password")
 
@@ -12,14 +12,14 @@ describe 'line_items', :type => :request do
     fill_in "Password", :with => user.password
 
     click_button "Sign in"
-	end
+  end
 
-	context "Import line items button" do
-		it "goes to add line items page" do
-			page.should have_content "Line items"
-		  click_link "Import line items"
-		  page.should  have_content "Cancel"
-		end
-	end
+  context "Import line items button" do
+    it "goes to add line items page" do
+      page.should have_content "Line items"
+      click_link "Import line items"
+      page.should  have_content "Cancel"
+    end
+  end
 
 end
