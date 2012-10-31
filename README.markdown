@@ -1,7 +1,7 @@
-# Challenge for Software Engineer - Big Data 
+# Challenge for Software Engineer - Big Data
 To better assess a candidates development skills, we would like to provide the following challenge.  You have as much time as you'd like (though we ask that you not spend more than a few hours).
 
-There are three jobs that both use this challenge:
+There are two jobs that both use this challenge:
 
 1. Senior Software Engineer: If you are applying to this position, the email address you should use for submission is [dev.challenges@livingsocial.com](dev.challenges@livingsocial.com).  You must use either Ruby/Ruby on Rails or Scala/Play2.0.
 1. Senior Software Engineer, Big Data (and/or Data Scientist): If you are applying to this position, the email address you should use for submission is [data.challenge@livingsocial.com](mailto:data.challenge@livingsocial.com).  You may use any programming language or framework you'd like.
