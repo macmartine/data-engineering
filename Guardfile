@@ -17,5 +17,7 @@ guard 'rspec', :version => 2, :cli => "--drb", :all_on_start => false, :all_afte
   watch(%r{spec/controllers/.+\.rb$})
   watch(%r{spec/requests/.+\.rb$})
   watch(%r{spec/views/.+\.rb$})
+  watch(%r{spec/models/.+\.rb$})
+  watch(%r{spec/helpers/.+\.rb$})
 end
 

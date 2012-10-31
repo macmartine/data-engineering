@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe TransactionsController do
+describe LineItemsController do
 	include Devise::TestHelpers
 
 	before (:each) do

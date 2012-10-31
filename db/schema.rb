@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121027164033) do
+ActiveRecord::Schema.define(:version => 20121030224653) do
 
   create_table "items", :force => true do |t|
     t.integer  "merchant_id"
@@ -37,9 +37,10 @@ ActiveRecord::Schema.define(:version => 20121027164033) do
   end
 
   create_table "purchasers", :force => true do |t|
-    t.string   "name"
+    t.string   "first"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "last"
   end
 
   create_table "transactions", :force => true do |t|

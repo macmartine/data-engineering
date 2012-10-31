@@ -1,0 +1,33 @@
+.page-header
+	%h1
+		Line items
+		%span.pull-right
+			=link_to '<i class="icon-plus"></i> Import line items'.html_safe, new_upload_path, :class => "btn"
+
+.well
+	%p
+		%b
+			Total items sold:
+			=total_items_sold(@line_items)
+
+	%p
+		%b
+			Total revenue:
+			=total_revenue(@line_items)
+
+%table.table.table-bordered
+	%tr
+		%th
+			Merchant
+		%th
+			Merchant address
+		%th
+			Purchaser
+		%th
+			Item Description
+		%th
+			Item price
+		%th
+			Quantity purchased
+
+	=render :partial => "line_item", :collection => @line_items

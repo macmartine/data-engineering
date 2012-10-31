@@ -11,3 +11,12 @@
  *= require_self
  *= require_tree .
  */
+
+
+body {
+	padding-bottom: 50px;
+}
+
+input[type="file"] {
+	line-height: 8px !important;
+}

@@ -2,8 +2,8 @@ DataEngineering::Application.routes.draw do
 
   devise_for :users
 
-  resources :transactions
-  resources :file_imports
+  resources :line_items
+  resources :uploads
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -54,7 +54,7 @@ DataEngineering::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'transactions#index'
+  root :to => 'line_items#index'
 
   # See how all your routes lay out with "rake routes"
 

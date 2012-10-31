@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'transactions', :type => :request do
+describe 'line_items', :type => :request do
 
 	before (:each) do
     user = User.create(:email    => "email@example.com",
@@ -14,10 +14,12 @@ describe 'transactions', :type => :request do
     click_button "Sign in"
 	end
 
-	it "goes to add transitions page" do
-		page.should have_content "Signed in successfully."
-	  click_link "Import transactions"
-	  page.should  have_content "Choose a file to import transactions."
+	context "Import line items button" do
+		it "goes to add line items page" do
+			page.should have_content "Line items"
+		  click_link "Import line items"
+		  page.should  have_content "Cancel"
+		end
 	end
 
 end

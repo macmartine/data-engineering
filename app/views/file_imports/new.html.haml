@@ -1,9 +1,0 @@
-Form
-
-%p
-	Choose a file to import transactions. Supported file types: .tab
-
-=form_for @file_import, :multipart => true do |f|
-	=f.file_field :csv_file
-	=f.submit 'Import transactions', :class => "btn btn-primary"
-	=link_to 'Cancel', transactions_path, :class => "btn btn-danger"

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'file_imports', :type => :request do
+describe 'uploads', :type => :request do
 
 	before (:each) do
     user = User.create(:email    => "email@example.com",
@@ -15,9 +15,15 @@ describe 'file_imports', :type => :request do
 	end
 
 	it "goes to transitions page on cancel" do
-	  visit new_file_import_path
+	  visit new_upload_path
 	  click_link "Cancel"
-	  current_path.should == transactions_path
+	  current_path.should == line_items_path
+	end
+
+	it "should show error when no file selected" do
+	  visit new_upload_path
+	  click_link "Cancel"
+	  current_path.should == line_items_path
 	end
 
 end

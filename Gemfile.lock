@@ -72,6 +72,7 @@ GEM
     factory_girl_rails (4.1.0)
       factory_girl (~> 4.1.0)
       railties (>= 3.0.0)
+    fastercsv (1.5.5)
     ffi (1.1.5)
     guard (1.5.2)
       listen (>= 0.4.2)
@@ -212,6 +213,7 @@ DEPENDENCIES
   debugger
   devise
   factory_girl_rails
+  fastercsv
   guard-rspec
   guard-spork
   haml

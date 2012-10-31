@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'haml'
+gem 'fastercsv'
 
 group :test do
 	gem 'factory_girl_rails'

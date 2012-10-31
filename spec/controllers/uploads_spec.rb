@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe FileImportsController do
+describe UploadsController do
 	include Devise::TestHelpers
 
 	before (:each) do
@@ -16,14 +16,17 @@ describe FileImportsController do
 	end
 
 	describe "POST create" do
-		it "renders the 'index' template on success" do
-			CSVLib.stub!(:new).and_return(true)
-			post :create
-	  	response.should redirect_to transactions_path
+		before :each do
+  		@file = fixture_file_upload('/files/example_input.tab', 'text/plain')
 		end
+
+		it "renders the 'index' template on success" do
+			post :create, :upload => {:upload_file => @file}
+	  	response.should redirect_to line_items_path
+		end
+
 		it "renders the 'new' template on failure" do
-			CSVLib.stub!(:new).and_return(false)
-			post :create
+			post :create, :upload => {:upload_file => nil}
 	  	response.should render_template("new")
 		end
 	end
